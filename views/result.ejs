@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="main_content form">
+            <h1>Dojo Survey Summary</h1>
+            <p><b>Name:</b> <%= form_data.name %></p>
+            <p><b>Dojo Location:</b> <%= form_data.location %></p> 
+            <p><b>Favorite Language:</b> <%= form_data.language %></p>
+            <p><b>Comment:</b> <%= form_data.comment %></p>
+            <a href="/">Re-take Survey</a>
+        </div>
+    </div>
+</body>
+</html>

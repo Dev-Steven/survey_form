@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+
+        <form action="/submit" method="post" class="form">
+            <h1>Welcome to the Dojo Survey!</h1>
+            <div class="label">
+                <p>Your Name:</p>
+                <p>Dojo Location:</p>
+                <p>Favorite Language:</p>
+            </div>
+            <div class="input">
+                <input type="text" name="name" class="data">
+                <br>
+                <select name="location" id="" class="data">
+                    <option value="Orange County">Orange County</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="San Jose">San Jose</option>
+                    <option value="Berkeley">Berkeley</option>
+                    <option value="Burbank">Burbank</option>
+                </select>
+                <br>
+                <select name="language" id="" class="data">
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Swift">Swift</option>
+                </select>
+            </div>
+    
+            <div class="comment">
+                <p>Comment (optional)</p>
+                <textarea name="comment" placeholder="Enter comment here."></textarea>
+            </div>
+            <div class="d-flex justify-content-start">
+                <input class="btn btn-primary" type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
